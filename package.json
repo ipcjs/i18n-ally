@@ -1,7 +1,7 @@
 {
   "publisher": "ipcjs",
   "name": "i18n-ally-ipcjs",
-  "version": "2.12.0",
+  "version": "2.13.0",
   "displayName": "i18n Ally (ipcjs)",
   "description": "🌍 All in one i18n extension for VS Code",
   "keywords": [

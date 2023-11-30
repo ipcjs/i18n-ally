@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.13.0](https://github.com/ipcjs/i18n-ally/compare/v2.12.0...v2.13.0) (2023-11-30)
+
+
+### ⚡ Features
+
+* support flutter gen-l10n ([a48b0e4](https://github.com/ipcjs/i18n-ally/commit/a48b0e4e9b2ad353aa0a44ac202689e0543502da))
+
+
+### 🐞 Bug Fixes
+
+* annotations was misplaced, when opening a historical version of a file ([#1](https://github.com/ipcjs/i18n-ally/issues/1)) ([7a358cc](https://github.com/ipcjs/i18n-ally/commit/7a358cc29631d3d9c31cfde73a5052b8f473b978))
+* translate fail when use http proxy ([7510738](https://github.com/ipcjs/i18n-ally/commit/75107386c02175c65e93590e172cb0708840d634))
+
 ## [2.12.0](https://github.com/lokalise/i18n-ally/compare/v2.11.1...v2.12.0) (2023-09-23)
 
 ### ⚡ Features
