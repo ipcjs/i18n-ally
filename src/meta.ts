@@ -1,6 +1,6 @@
 export const EXT_NAMESPACE = 'i18n-ally'
-export const EXT_ID = 'lokalise.i18n-ally'
-export const EXT_NAME = 'i18n Ally'
+export const EXT_ID = 'ipcjs.i18n-ally-ipcjs'
+export const EXT_NAME = 'i18n Ally (ipcjs)'
 export const EXT_EDITOR_ID = 'i18n-ally-editor'
 export const EXT_REVIEW_ID = 'i18n-ally-review'
 

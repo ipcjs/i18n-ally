@@ -3,7 +3,7 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "lokalise.i18n-ally",
+    "ipcjs.i18n-ally-ipcjs",
     "amodio.tsl-problem-matcher",
   ]
 }
