@@ -93,6 +93,7 @@ const annotation: ExtensionModule = (ctx) => {
     const sourceLanguage = Config.sourceLanguage
     const showAnnotations = Config.annotations
     const annotationInPlace = Config.annotationInPlace
+    const annotationRange = Config.annotationRange
     const themeAnnotationMissing = Config.themeAnnotationMissing
     const themeAnnotation = Config.themeAnnotation
     const themeAnnotationBorder = Config.themeAnnotationBorder
@@ -105,11 +106,12 @@ const annotation: ExtensionModule = (ctx) => {
         ? `${namespace}.${key.key}`
         : key.key
 
+      const isUseAnnotation = annotationRange === 'annotation' && key.annotationStart != null && key.annotationEnd != null
       const range = new Range(
-        document.positionAt(key.start),
-        document.positionAt(key.end),
+        document.positionAt(isUseAnnotation ? key.annotationStart! : key.start),
+        document.positionAt(isUseAnnotation ? key.annotationEnd! : key.end),
       )
-      const rangeWithQuotes = key.quoted
+      const rangeWithQuotes = !isUseAnnotation && key.quoted
         ? new Range(
           range.start.with(undefined, range.start.character - 1),
           range.end.with(undefined, range.end.character + 1),

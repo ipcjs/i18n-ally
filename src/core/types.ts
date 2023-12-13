@@ -115,6 +115,8 @@ export interface KeyInDocument {
   end: number
   key: string
   quoted: boolean
+  annotationStart?: number
+  annotationEnd?: number
 }
 
 export interface KeyOccurrence {

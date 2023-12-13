@@ -17,7 +17,7 @@ export function handleRegexMatch(
   starts: number[] = [],
 ): KeyInDocument | undefined {
   const matchString = match[0]
-  let key = match[1]
+  let key = match.groups?.key ?? match[1]
   if (!key)
     return
 
@@ -25,6 +25,9 @@ export function handleRegexMatch(
   const end = start + key.length
   const scope = scopes.find(s => s.start <= start && s.end >= end)
   const quoted = QUOTE_SYMBOLS.includes(text[start - 1])
+  const annotation = match.groups?.annotation ?? match[0]
+  const annotationStart = match.index + matchString.lastIndexOf(annotation)
+  const annotationEnd = annotationStart + annotation.length
 
   const namespace = scope?.namespace || defaultNamespace
 
@@ -50,6 +53,8 @@ export function handleRegexMatch(
       start,
       end,
       quoted,
+      annotationStart,
+      annotationEnd,
     }
   }
 }
