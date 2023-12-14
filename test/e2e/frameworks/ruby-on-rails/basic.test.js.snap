@@ -3,36 +3,48 @@
 exports[`Ruby on Rails get keys 1`] = `
 Array [
   Object {
+    "annotationEnd": 20,
+    "annotationStart": 7,
     "end": 19,
     "key": "pages.index.welcome",
     "quoted": true,
     "start": 11,
   },
   Object {
+    "annotationEnd": 54,
+    "annotationStart": 34,
     "end": 53,
     "key": "pages.index.bold_text.html",
     "quoted": true,
     "start": 38,
   },
   Object {
+    "annotationEnd": 74,
+    "annotationStart": 62,
     "end": 73,
     "key": "welcome",
     "quoted": true,
     "start": 66,
   },
   Object {
+    "annotationEnd": 270,
+    "annotationStart": 256,
     "end": 269,
     "key": "pages.index.new_post",
     "quoted": true,
     "start": 260,
   },
   Object {
+    "annotationEnd": 316,
+    "annotationStart": 305,
     "end": 315,
     "key": "pages.index.posts",
     "quoted": true,
     "start": 309,
   },
   Object {
+    "annotationEnd": 369,
+    "annotationStart": 344,
     "end": 368,
     "key": "pages.index.new_post",
     "quoted": false,
