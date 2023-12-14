@@ -138,6 +138,10 @@ export class Config {
     return this.getConfig<boolean>('annotationInPlace') ?? true
   }
 
+  static get annotationRange(): 'key' | 'annotation' {
+    return this.getConfig('annotationRange') ?? 'key'
+  }
+
   static get namespace(): boolean | undefined {
     return this.getConfig<boolean>('namespace')
   }

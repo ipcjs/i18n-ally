@@ -779,6 +779,15 @@
           "default": true,
           "description": "%config.annotation_in_place%"
         },
+        "i18n-ally.annotationRange" : {
+          "type": "string",
+          "default": "key",
+          "enum": [
+            "key",
+            "annotation"
+          ],
+          "description": "%config.annotation_range%"
+        },
         "i18n-ally.annotationMaxLength": {
           "type": "number",
           "default": 40,
