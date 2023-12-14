@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.13.1](https://github.com/ipcjs/i18n-ally/compare/v2.13.0...v2.13.1) (2023-12-14)
+
+
+### ⚡ Features
+
+* support modify the range of annotation display ([#2](https://github.com/ipcjs/i18n-ally/issues/2)) ([d328621](https://github.com/ipcjs/i18n-ally/commit/d32862192189a2257c624ec09ca56cf291926540))
+
 ## [2.13.0](https://github.com/ipcjs/i18n-ally/compare/v2.12.0...v2.13.0) (2023-11-30)
 
 
