@@ -786,7 +786,7 @@
             "key",
             "annotation"
           ],
-          "description": "注释的范围"
+          "description": "%config.annotation_range%"
         },
         "i18n-ally.annotationMaxLength": {
           "type": "number",
