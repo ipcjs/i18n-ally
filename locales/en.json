@@ -35,7 +35,7 @@
   "config.annotation_delimiter": "The delimiter for annotations",
   "config.annotation_in_place": "Show annotation in place instead of appending to the tail",
   "config.annotation_max_length": "Max number of characters shown in the inline annotations. Excess characters will display as an ellipses (...)",
-  "config.annotation_range": "Range of annotation display",
+  "config.annotation_range": "Range of annotation display\n- `key`: The annotation is displayed at the key position\n- `annotation`: The annotation is displayed at the position of the matching group named `annotation` in the regular expression of `i18n-ally.regex`",
   "config.annotations": "Enable the inline annotations.",
   "config.auto_detection": "Enable locales auto detection for projects",
   "config.baidu_app_secret": "APP Secret to use Baidu translate engine",
