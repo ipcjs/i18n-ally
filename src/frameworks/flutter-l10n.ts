@@ -34,6 +34,7 @@ class FlutterL10nFramework extends Framework {
   usageMatchRegex = [
     '(?<annotation>S\\.of\\([\\w.]+\\)[?!]?\\.(?<key>{key}))\\W',
     '(?<annotation>AppLocalizations\\.of\\([\\w.]+\\)[?!]?\\.(?<key>{key}))\\W',
+    '(?<annotation>l10n\\.(?<key>{key}))\\W',
   ]
 
   preferredKeystyle?: KeyStyle = 'flat'
@@ -44,6 +45,7 @@ class FlutterL10nFramework extends Framework {
     return [
       `S.of(context).${keypath}`,
       `AppLocalizations.of(context).${keypath}`,
+      `l10n.${keypath}`,
       keypath,
     ]
   }
