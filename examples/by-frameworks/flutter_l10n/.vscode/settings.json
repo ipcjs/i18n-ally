@@ -1,4 +1,5 @@
 {
+  "eslint.enable": false,
   "i18n-ally.disabled": false,
   "i18n-ally.enabledParsers": [
     "arb"

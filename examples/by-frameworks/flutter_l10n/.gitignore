@@ -5,9 +5,11 @@
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
+.swiftpm/
 migrate_working_dir/
 
 # IntelliJ related
@@ -48,5 +50,9 @@ app.*.map.json
 /ios
 /windows
 /linux
+/macos
 /test
 /.metadata
+
+# ignore generated l10n files
+/lib/l10n/app_localizations*.dart

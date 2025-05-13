@@ -12,12 +12,19 @@ class FlutterL10nFramework extends Framework {
 
   detection = {
     pubspecYAML: (_: string[], root: string) => {
-      const filepath = path.resolve(root, PubspecYAMLParser.filename)
-      if (!fs.existsSync(filepath))
-        return false
       try {
+        const filepath = path.resolve(root, PubspecYAMLParser.filename)
+        if (!fs.existsSync(filepath))
+          return false
         const yaml = YAML.load(File.readSync(filepath)) as any
-        return !!(yaml?.flutter?.generate)
+        // In flutter 3.29, the generate field has been deprecated. Instead, use l10n.yaml to determine whether gen-l10n is enabled.
+        // https://docs.flutter.dev/release/breaking-changes/flutter-generate-i10n-source
+        if (typeof yaml?.flutter?.generate !== 'undefined')
+          return !!yaml.flutter.generate
+
+        const l10nYamlFile = path.resolve(root, 'l10n.yaml')
+        if (fs.existsSync(l10nYamlFile))
+          return true
       }
       catch (e) {
         Log.error(e)

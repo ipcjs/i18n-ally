@@ -66,5 +66,15 @@
     "vue",
     "html"
   ],
+  // https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+  "terminal.integrated.env.osx": {
+    "NODE_OPTIONS": "--openssl-legacy-provider",
+  },
+  "terminal.integrated.env.windows": {
+    "NODE_OPTIONS": "--openssl-legacy-provider",
+  },
+  "terminal.integrated.env.linux": {
+    "NODE_OPTIONS": "--openssl-legacy-provider",
+  },
   "typescript.tsdk": "node_modules/typescript/lib",
 }
