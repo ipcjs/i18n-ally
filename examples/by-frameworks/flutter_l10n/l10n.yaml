@@ -1,3 +1,5 @@
+# https://docs.flutter.dev/release/breaking-changes/flutter-generate-i10n-source
+synthetic-package: false
 # https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization
 nullable-getter: false
 output-class: S
