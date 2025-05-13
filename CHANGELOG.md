@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.13.1](https://github.com/lokalise/i18n-ally/compare/v2.13.0...v2.13.1) (2024-11-01)
+
+## [2.13.0](https://github.com/lokalise/i18n-ally/compare/v2.12.0...v2.13.0) (2024-11-01)
+
+
+### ⚡ Features
+
+* Update `next-intl` to support latest release ([#1048](https://github.com/lokalise/i18n-ally/issues/1048)) ([b5b16b2](https://github.com/lokalise/i18n-ally/commit/b5b16b2641e745018068e88099241405ff122119))
+
+
+### 🐞 Bug Fixes
+
+* fix word spelling errors ([#1129](https://github.com/lokalise/i18n-ally/issues/1129)) ([0427255](https://github.com/lokalise/i18n-ally/commit/0427255756876fff75493d9ba85648ce52b9c9e4))
+* upgrade babel to 7.23.5 ([#1080](https://github.com/lokalise/i18n-ally/issues/1080)) ([a4004a5](https://github.com/lokalise/i18n-ally/commit/a4004a57e2ed6c57c98180a9ae6e8c73e90e0585))
+
 ### [2.13.1](https://github.com/ipcjs/i18n-ally/compare/v2.13.0...v2.13.1) (2023-12-14)
 
 
@@ -21,21 +36,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 * annotations was misplaced, when opening a historical version of a file ([#1](https://github.com/ipcjs/i18n-ally/issues/1)) ([7a358cc](https://github.com/ipcjs/i18n-ally/commit/7a358cc29631d3d9c31cfde73a5052b8f473b978))
 * translate fail when use http proxy ([7510738](https://github.com/ipcjs/i18n-ally/commit/75107386c02175c65e93590e172cb0708840d634))
-
-### [2.13.1](https://github.com/lokalise/i18n-ally/compare/v2.13.0...v2.13.1) (2024-11-01)
-
-## [2.13.0](https://github.com/lokalise/i18n-ally/compare/v2.12.0...v2.13.0) (2024-11-01)
-
-
-### ⚡ Features
-
-* Update `next-intl` to support latest release ([#1048](https://github.com/lokalise/i18n-ally/issues/1048)) ([b5b16b2](https://github.com/lokalise/i18n-ally/commit/b5b16b2641e745018068e88099241405ff122119))
-
-
-### 🐞 Bug Fixes
-
-* fix word spelling errors ([#1129](https://github.com/lokalise/i18n-ally/issues/1129)) ([0427255](https://github.com/lokalise/i18n-ally/commit/0427255756876fff75493d9ba85648ce52b9c9e4))
-* upgrade babel to 7.23.5 ([#1080](https://github.com/lokalise/i18n-ally/issues/1080)) ([a4004a5](https://github.com/lokalise/i18n-ally/commit/a4004a57e2ed6c57c98180a9ae6e8c73e90e0585))
 
 ## [2.12.0](https://github.com/lokalise/i18n-ally/compare/v2.11.1...v2.12.0) (2023-09-23)
 
