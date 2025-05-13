@@ -15,6 +15,7 @@ const config = {
   },
   entry: './src/extension.ts',
   output: {
+    hashFunction: 'sha256',
     path: path.resolve(__dirname, 'dist'),
     filename: 'extension.js',
     libraryTarget: 'commonjs2',
@@ -57,6 +58,11 @@ const config = {
             loader: 'ts-loader',
           },
         ],
+      },
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto',
       },
     ],
   },
