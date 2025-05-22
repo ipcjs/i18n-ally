@@ -192,7 +192,7 @@ export abstract class Loader extends Disposable {
     return undefined
   }
 
-  private stripAnnotationString(str: string, maxlength = 0) {
+  private stripAnnotationString(str: string | undefined, maxlength = 0) {
     if (!str)
       return
     if (maxlength && str.length > maxlength)
@@ -201,7 +201,7 @@ export abstract class Loader extends Disposable {
   }
 
   private treeNodeValueHasPluralizationKeys(value: Record<string, any>) {
-    return value && isObject(value) && Object.keys(value).some(key => NESTED_PLURALIZATION_KEYS.includes(key))
+    return value && isObject(value) && Object.entries(value).some(([key, value]) => NESTED_PLURALIZATION_KEYS.includes(key) && typeof value === 'string')
   }
 
   private firstPluralizationKey(value: Record<string, any>) {
@@ -217,7 +217,7 @@ export abstract class Loader extends Disposable {
 
     const firstPluralizationKey = this.firstPluralizationKey(value)
 
-    return firstPluralizationKey ? (value as Record<string, any>)[firstPluralizationKey] : undefined
+    return firstPluralizationKey ? (value as Record<string, string>)[firstPluralizationKey] : undefined
   }
 
   getValueByKey(key: string, locale?: string, maxlength = 0, stringifySpace?: number, context: RewriteKeyContext = {}) {
