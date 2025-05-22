@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.13.103](https://github.com/ipcjs/i18n-ally/compare/v2.13.102...v2.13.103) (2025-05-22)
+
+
+### 🐞 Bug Fixes
+
+* garbled text within the extra text picker window ([#7](https://github.com/ipcjs/i18n-ally/issues/7)) ([6a13b8b](https://github.com/ipcjs/i18n-ally/commit/6a13b8b4ee4db5b43621295e34bd75824886b30f))
+
 ### [2.13.102](https://github.com/ipcjs/i18n-ally/compare/v2.13.1...v2.13.102) (2025-05-13)
 
 
